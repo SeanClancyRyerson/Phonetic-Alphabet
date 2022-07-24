@@ -1,17 +1,23 @@
 :root {
-    --bg-color: #121212;
-    --accent-color: #ba86fa;
+    --bg-color: #191919;
+    --primary-color: #2D4263;
+    --secondary-color: #C84B31;
+    --accent-color: #ECDBBA;
     background-color: var(--bg-color);
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 100px;
 }
 
 h1 {
-    color: var(--accent-color);
+    color: var(--secondary-color);
+    font-size: 4em;
+    margin-bottom: 0;
 }
 
 .letters {
@@ -25,9 +31,9 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--accent-color);
-    width: 75px;
-    height: 75px;
+    background-color: var(--primary-color);
+    width: 85px;
+    height: 85px;
     border-radius: 3px;
 }
 
@@ -36,10 +42,47 @@ h1 {
 }
 
 .letter {
-    color: white;
+    color: var(--accent-color);
     font-size: 3em;
 }
 
 .word {
-    color: white;
+    color: var(--accent-color);
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-size: 1.2em;
+    border-radius: 5px;
+    height: 40px;
+    width: 500px;
+}
+
+input:focus {
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+}
+
+button {
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(214, 196, 159);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+img {
+    height: 38px;
 }
